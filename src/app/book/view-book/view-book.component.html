@@ -1,0 +1,37 @@
+<div class="container">
+
+  <form [formGroup]="bookFormGrounp">
+    <div class="modal-header">
+      <h4 class="modal-title">Edit Account</h4>
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="form-group">
+        <label>#</label>
+        <input type="text" class="form-control" formControlName="id" required="" readonly>
+        <!--        <p *ngIf="!productFormGrounp.get('id')?.valid && productFormGrounp.get('id')?.touched"-->
+        <!--           style="color: red">id > 0</p>-->
+      </div>
+      <div class="form-group">
+        <label>Title</label>
+        <input type="text" class="form-control" formControlName="title" required="" readonly>
+
+      </div>
+      <div class="form-group">
+        <label>Author</label>
+        <input type="email" class="form-control" formControlName="author" required="" readonly>
+
+      </div>
+      <div class="form-group">
+        <label>Description</label>
+        <input type="email" class="form-control" formControlName="description" required="" readonly>
+
+      </div>
+    </div>
+    <div class="modal-footer">
+      <input type="button" class="btn btn-default" routerLink="" data-dismiss="modal"
+             value="Cancel">
+    </div>
+  </form>
+</div>
+
